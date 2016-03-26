@@ -1,0 +1,11 @@
+.DS_Store
+www/
+node_modules
+*.log*
+*.eot
+*.otf
+*.ttf
+*.woff
+public/assets/type/
+public/assets/img/test
+store
