@@ -1,0 +1,12 @@
+header
+  section.hello
+    .title
+      h1 Cade
+      p #{ bio.en }
+
+    .contact
+      h2 Contact
+      ul
+        li email: #[a(href="mailto:#{ contacts.email }") #{ contacts.email }].
+        li tel/signal: #[a(href="tel://#{ contacts.tel }") #{ contacts.tel }].
+        li pgp key: #[a(href="/key.txt") here], and #[a(href=" #{ contacts.keybase }") on keybase].
