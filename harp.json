@@ -1,0 +1,18 @@
+{
+  "domains": ["cade.io", "cade.jp"],
+  "globals": {
+    "meta": {
+      "title": "Cade",
+      "desc": "Creative director, design lead: Human-computer interaction, Emergent technology, privacy, computer art, socially responsive design."
+    },
+    "contacts": {
+      "twitter": "helveticade",
+      "email": "me@cade.jp",
+      "tel": "+61 458 000 309",
+      "pgp": "/key.txt",
+      "keybase": "https://keybase.io/cade",
+      "github": "https://github.com/helveticade"
+    },
+    "site_url": "https://cade.io"
+  }
+}

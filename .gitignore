@@ -9,3 +9,5 @@ node_modules
 public/assets/type/
 public/assets/img/test
 store
+public/assets/styles/_type
+CNAME
