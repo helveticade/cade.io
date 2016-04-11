@@ -1,0 +1,260 @@
+$NovelMono: NovelMonoPro, Chicago, Monaco, monospace;
+
+$blue: #2700E6;
+$black: #434247;
+$white: #F8F8F8;
+$magenta: #BD10E0;
+$teal: #50E3C2;
+$lightBlue: #4A90E2;
+$yellow: #F5A623;
+
+
+body {
+  background-size: 800px 640px;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url('/assets/img/background.png');
+  background-color: $white;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  body {
+    background-image: url('/assets/img/background@2x.png');
+  }
+}
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+h2, strong {
+  font-weight: bold;
+  color: $black;
+
+}
+
+[uiPositioner] {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+[uiWindow] {
+  width: 80vw;
+  max-width: 42rem;
+  border: 6px solid $blue;
+  box-shadow: 16px 16px 0px $blue;
+  background: $white;
+  font-family: $NovelMono;
+  line-height: 1.5;
+  color: $black;
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+[uiWindow~="small"] {
+  max-width: 25%;
+}
+[uiWindow~="yellow"] {
+  border: 6px solid $yellow;
+  box-shadow: 16px 16px 0px $yellow;
+  margin: 0 0 0 16px;
+  transition: background-color 100ms linear, color 200ms linear;
+  a {
+    color: $yellow;
+  }
+  &:hover {
+    color: $white;
+    background-color: $yellow;
+  }
+}
+
+[uiWindow~="magenta"] {
+  border: 6px solid $magenta;
+  box-shadow: 16px 16px 0px $magenta;
+  margin: 0 16px 0 0;
+  transition: background-color 100ms linear, color 200ms linear;
+  a {
+    color: $magenta;
+  }
+  &:hover {
+    color: $white;
+    background-color: $magenta;
+  }
+}
+
+[uiWindow~="teal"] {
+  border: 6px solid $teal;
+  box-shadow: 16px 16px 0px $teal;
+  margin: 0 16px;
+  transition: background-color 100ms linear, color 200ms linear;
+  a {
+    color: $teal;
+  }
+  &:hover {
+    color: $white;
+    background-color: $teal;
+  }
+}
+
+[uiWindow~="lightBlue"] {
+  border: 6px solid $lightBlue;
+  box-shadow: 16px 16px 0px $lightBlue;
+  margin: 0 16px;
+  transition: background-color 100ms linear, color 200ms linear;
+  a {
+    color: $lightBlue;
+  }
+  &:hover {
+    color: $white;
+    background-color: $lightBlue;
+  }
+}
+
+[uiBox] {
+  font-size: 14px;
+  padding: 32px;
+
+  .cv-link {
+    position: relative;
+  }
+  .cv-link:hover, .cv-link:focus {
+    text-decoration: underline;
+  }
+  .cv-link:after {
+    content: '💾';
+    overflow: visible;
+    font-size: 11px;
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: opacity 50ms linear, transform 250ms ease-out;
+  }
+  .cv-link:hover:after {
+    opacity: 1;
+    transform: translateX(4px);
+  }
+}
+
+[uiBox~="lined"] {
+  border-bottom: 3px solid $blue;
+}
+[uiBox~="small"] {
+  padding: 16px;
+  text-align: center;
+  display: block;
+}
+
+[uiOptions] {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 14px;
+  li {
+    transition: background-color 100ms linear, color 200ms linear;
+    &:hover {
+      background-color: $blue;
+      h2, p {
+        color: $white;
+      }
+    }
+    a {
+      display: inline-block;
+    }
+  }
+  [uiWork] a {
+    min-width: 8rem;
+    max-width: 8rem;
+    padding: 16px 16px 24px 32px;
+  }
+  [uiText] a {
+    padding: 16px 32px 24px 16px;
+    border-left: 3px solid $blue;
+  }
+}
+
+[uiContact] {
+  width: 80vw;
+  margin-top: 3rem;
+  max-width: 42rem;
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+}
+
+// Bottom links
+[uiIconLink] {
+  position: relative;
+  font-weight: bold;
+  letter-spacing: -0.01rem;
+}
+[uiBox~="small"] {
+  transform: translateX(9px);
+  transition: transform 250ms ease-out;
+
+}
+[uiBox~="small"]:hover {
+  transform: translateX(0px);
+
+}
+
+[uiIconLink]:hover {
+  color: $white;
+}
+[uiIconLink]:after {
+  overflow: visible;
+  font-size: 14px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 50ms linear, transform 250ms ease-out;
+  content: '✉︎';
+}
+[uiIconLink]:hover:after {
+  opacity: 1;
+  transform: translateX(8px);
+}
+
+[uiIconLink~="email"]:after {
+  overflow: visible;
+  font-size: 14px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 50ms linear, transform 250ms ease-out;
+  content: '💌';
+}
+[uiIconLink~="key"]:after {
+  overflow: visible;
+  font-size: 14px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 50ms linear, transform 250ms ease-out;
+  content: '🔑';
+}
+[uiIconLink~="twitter"]:after {
+  overflow: visible;
+  font-size: 14px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 50ms linear, transform 250ms ease-out;
+  content: '💬';
+}
+[uiIconLink~="tel"]:after {
+  overflow: visible;
+  font-size: 14px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 50ms linear, transform 250ms ease-out;
+  content: '📱';
+}
