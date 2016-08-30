@@ -4,7 +4,7 @@ html(lang="en")
     meta(charset='utf-8')
     title Cade: human computer interaction.
     base(href="/")
-    meta(name='description' content='#{description}')
+    meta(name='description' content='#{meta.desc}')
     meta(name='robots' content='index, follow, noodp')
 
     //Viewport setup
@@ -18,15 +18,16 @@ html(lang="en")
         div(uiBox="lined")
           p Cade is a designer &amp; researcher who focuses on emergent technology, privacy, user empowerment, computer art and expression of the self. He has led projects in Australia, Singapore, Japan and the US.
           p His practice is forged in socially conscious, sensitive and humane design, creating work that helps others embrace the joy of the electric world.
-          p: a(href="ccd_2016_cv.pdf").cv-link View CV
-        ul(uiOptions)
-          li(uiWork)
-            a(href="#")
-              h2 Work
-              p Design Lead, SpiderOak
-          li(uiText)
-            a(href="#")
-              h2 Text
-              p This is a test to see how long a piece of text can go for.
+
+        div(uiOptions)
+          a(uiWork href="https://spideroak.com")
+            h2 Work
+            p Design Lead, SpiderOak
+          a(uiText href="https://www.are.na/shiba-computer/projects-1469543857")
+            h2 Documentation
+            p A collection of work in privacy, new finance, encryption and art.
+          a(uiPress href="https://motherboard.vice.com/read/snowdens-favorite-cloud-service-now-has-a-group-chat-app")
+            h2 Press
+            p VICE/Motherboard: "Snowden’s Favorite Cloud Service Now Has a Group Chat App"
       include _partials/contacts
     script(src='/assets/js/cade.js')

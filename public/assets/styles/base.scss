@@ -15,6 +15,9 @@ body {
   background-attachment: fixed;
   background-image: url('/assets/img/background.png');
   background-color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
@@ -38,16 +41,17 @@ h2, strong {
 
 [uiPositioner] {
   min-height: 100vh;
+  width: 80vw;
+  max-width: 42rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
+  align-items: stretch;
 }
 
 [uiWindow] {
-  width: 80vw;
-  max-width: 42rem;
   border: 6px solid $blue;
   box-shadow: 16px 16px 0px $blue;
   background: $white;
@@ -60,7 +64,7 @@ h2, strong {
 }
 
 [uiWindow~="small"] {
-  max-width: 25%;
+  width: 25%;
 }
 [uiWindow~="yellow"] {
   border: 6px solid $yellow;
@@ -73,7 +77,14 @@ h2, strong {
   &:hover {
     color: $white;
     background-color: $yellow;
+    box-shadow: 4px 4px 0px $white, 21px 21px 0px $yellow;
+    transform: translateX(-5px) translateY(-5px);
   }
+  &:active {
+    box-shadow: 4px 4px 0px $white, 11px 11px 0px $yellow;
+    transform: translateX(5px) translateY(5px);
+  }
+
 }
 
 [uiWindow~="magenta"] {
@@ -87,7 +98,14 @@ h2, strong {
   &:hover {
     color: $white;
     background-color: $magenta;
+    box-shadow: 4px 4px 0px $white, 21px 21px 0px $magenta;
+    transform: translateX(-5px) translateY(-5px);
   }
+  &:active {
+    box-shadow: 4px 4px 0px $white, 11px 11px 0px $magenta;
+    transform: translateX(5px) translateY(5px);
+  }
+
 }
 
 [uiWindow~="teal"] {
@@ -101,6 +119,12 @@ h2, strong {
   &:hover {
     color: $white;
     background-color: $teal;
+    box-shadow: 4px 4px 0px $white, 21px 21px 0px $teal;
+    transform: translateX(-5px) translateY(-5px);
+  }
+  &:active {
+    box-shadow: 4px 4px 0px $white, 11px 11px 0px $teal;
+    transform: translateX(5px) translateY(5px);
   }
 }
 
@@ -115,6 +139,12 @@ h2, strong {
   &:hover {
     color: $white;
     background-color: $lightBlue;
+    box-shadow: 4px 4px 0px $white, 21px 21px 0px $lightBlue;
+    transform: translateX(-5px) translateY(-5px);
+  }
+  &:active {
+    box-shadow: 4px 4px 0px $white, 11px 11px 0px $lightBlue;
+    transform: translateX(5px) translateY(5px);
   }
 }
 
@@ -146,6 +176,7 @@ h2, strong {
 [uiBox~="lined"] {
   border-bottom: 3px solid $blue;
 }
+
 [uiBox~="small"] {
   padding: 16px;
   text-align: center;
@@ -156,8 +187,11 @@ h2, strong {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
   font-size: 14px;
-  li {
+  position: relative;
+  a {
+    box-sizing: border-box;
     transition: background-color 100ms linear, color 200ms linear;
     &:hover {
       background-color: $blue;
@@ -169,24 +203,27 @@ h2, strong {
       display: inline-block;
     }
   }
-  [uiWork] a {
-    min-width: 8rem;
-    max-width: 8rem;
+  [uiWork] {
     padding: 16px 16px 24px 32px;
+    flex: 0 1 25%;
   }
-  [uiText] a {
+  [uiText] {
     padding: 16px 32px 24px 16px;
     border-left: 3px solid $blue;
+    flex: 0 1 75%;
+  }
+  [uiPress] {
+    border-top: 3px solid $blue;
+    flex: 0 1 100%;
+    padding: 16px 32px 24px 32px;
   }
 }
 
 [uiContact] {
-  width: 80vw;
   margin-top: 3rem;
-  max-width: 42rem;
   display: flex;
   flex-direction: row;
-  align-items: space-between;
+  align-items: space-around;
 }
 
 // Bottom links
@@ -208,6 +245,7 @@ h2, strong {
 [uiIconLink]:hover {
   color: $white;
 }
+
 [uiIconLink]:after {
   overflow: visible;
   font-size: 14px;
