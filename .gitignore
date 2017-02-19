@@ -14,3 +14,4 @@ CNAME
 .letsencrypt
 *.pem
 */.well-known
+.DS_Store
