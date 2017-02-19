@@ -11,3 +11,7 @@ public/assets/img/test
 store
 public/assets/styles/_type
 CNAME
+.letsencrypt
+*.pem
+*/.well-known
+.DS_Store

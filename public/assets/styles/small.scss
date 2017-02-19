@@ -1,0 +1,42 @@
+$NovelMono: NovelMonoPro, Chicago, Monaco, monospace;
+
+$blue: #2700E6;
+$black: #434247;
+$white: #F8F8F8;
+$magenta: #BD10E0;
+$teal: #50E3C2;
+$lightBlue: #4A90E2;
+$yellow: #F5A623;
+
+section[uiWindow], [uiContact] {
+  margin-left: -16px;
+}
+
+[uiContact] {
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  [uiWindow~="small"] {
+    width: 42.5%;
+    margin: 0 0 2rem 0;
+
+  }
+}
+
+[uiPositioner] {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+[uiOptions] {
+  flex-direction: column;
+  align-items: stretch;
+  [uiWork] {
+    padding: 1rem 2rem;
+    border-bottom: 3px solid $blue;
+  }
+  [uiText] {
+    padding: 1rem 2rem;
+    border: none;
+  }
+}
