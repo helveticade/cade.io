@@ -12,3 +12,5 @@ store
 public/assets/styles/_type
 CNAME
 .letsencrypt
+*.pem
+*/.well-known
