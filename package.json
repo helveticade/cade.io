@@ -1,0 +1,22 @@
+{
+  "name": "shiba.computer",
+  "version": "1.0.0",
+  "description": "A small website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helveticade/shiba.computer.git"
+  },
+  "author": "Cade <cade@shiba.computer>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helveticade/shiba.computer/issues"
+  },
+  "homepage": "https://github.com/helveticade/shiba.computer#readme",
+  "dependencies": {
+    "harp": "^0.23.0"
+  }
+}

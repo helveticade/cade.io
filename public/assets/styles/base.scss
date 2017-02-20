@@ -49,6 +49,7 @@ h2, strong {
   justify-content: center;
   position: relative;
   align-items: stretch;
+  margin: 2rem 0;
 }
 
 [uiWindow] {
@@ -220,7 +221,7 @@ h2, strong {
 }
 
 [uiContact] {
-  margin-top: 3rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
   align-items: space-around;
@@ -295,4 +296,14 @@ h2, strong {
   transform: translateX(-5px);
   transition: opacity 50ms linear, transform 250ms ease-out;
   content: '📱';
+}
+
+[uiIconLink~="github"]:after {
+  overflow: visible;
+  font-size: 14px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 50ms linear, transform 250ms ease-out;
+  content: '💻';
 }
