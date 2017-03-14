@@ -2,8 +2,8 @@
   "domains": ["shiba.computer"],
   "globals": {
     "meta": {
-      "title": "Cade",
-      "desc": "Creative director, design lead, researcher: Human-computer interaction, emergent technology, privacy, computer art, socially responsive design."
+      "title": "shiba.computer: ",
+      "desc": "Creative director, design lead, researcher: Human-computer interaction, secure ux, user experience, emergent technology, privacy, computer art, socially responsive design."
     },
     "contacts": {
       "twitter": "helveticade",
@@ -11,8 +11,8 @@
       "tel": "+61 458 000 309",
       "pgp": "/key.txt",
       "keybase": "https://keybase.io/cade",
-      "github": "https://github.com/helveticade",
-      "semaphor": "/semaphor-card.png"
+      "github": "https://github.com/shibacomputer",
+      "arena": "https://are.na/shiba-computer",
     },
     "site_url": "https://shiba.computer"
   }
