@@ -2,7 +2,7 @@
   "domains": ["shiba.computer"],
   "globals": {
     "meta": {
-      "title": "shiba.computer: ",
+      "title": "shiba.computer: interaction design for a secure world.",
       "desc": "Creative director, design lead, researcher: Human-computer interaction, secure ux, user experience, emergent technology, privacy, computer art, socially responsive design."
     },
     "contacts": {
@@ -12,7 +12,7 @@
       "pgp": "/key.txt",
       "keybase": "https://keybase.io/cade",
       "github": "https://github.com/shibacomputer",
-      "arena": "https://are.na/shiba-computer",
+      "arena": "https://are.na/shiba-computer"
     },
     "site_url": "https://shiba.computer"
   }
