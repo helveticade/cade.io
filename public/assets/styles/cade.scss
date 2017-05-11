@@ -1,13 +1,13 @@
-@import '_utils/reset';
-@import '_utils/mixins';
-@import '_type/defs';
+@import url("_utils/reset.scss");
+@import url("_utils/mixins.scss");
+@import url("_type/defs.scss");
 
-@import 'base';
+@import url("base.scss");
 
 @media screen and (max-width: 767px) {
-  @import 'small';
+  @import url("small.scss");
 }
 
 @media screen and (min-width: 768px) {
-  @import 'large';
+  @import url("large.scss");
 }
