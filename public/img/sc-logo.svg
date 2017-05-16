@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="64px" viewBox="0 0 144 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#2300DD">
+            <polygon id="Fill-1" points="0 6 9 6 9 0 0 0"></polygon>
+            <polygon id="Fill-2" points="55 6 64 6 64 0 55 0"></polygon>
+            <polygon id="Fill-3" points="9 12 15 12 15 6 9 6"></polygon>
+            <polygon id="Fill-4" points="49 12 55 12 55 6 49 6"></polygon>
+            <polygon id="Fill-5" points="15 18 49 18 49 12 15 12"></polygon>
+            <polygon id="Fill-6" points="0 19 6 19 6 0 0 0"></polygon>
+            <polygon id="Fill-7" points="58 19 64 19 64 0 58 0"></polygon>
+            <polygon id="Fill-8" points="4 25 10 25 10 19 4 19"></polygon>
+            <polygon id="Fill-9" points="54 25 60 25 60 19 54 19"></polygon>
+            <polygon id="Fill-10" points="0 49 6 49 6 25 0 25"></polygon>
+            <polygon id="Fill-11" points="58 49 64 49 64 25 58 25"></polygon>
+            <polygon id="Fill-12" points="6 55 12 55 12 49 6 49"></polygon>
+            <polygon id="Fill-13" points="52 55 58 55 58 49 52 49"></polygon>
+            <polygon id="Fill-14" points="12 61 18 61 18 55 12 55"></polygon>
+            <polygon id="Fill-15" points="46 61 52 61 52 55 46 55"></polygon>
+            <polygon id="Fill-16" points="18 64 46 64 46 58 18 58"></polygon>
+            <polygon id="Fill-17" points="38 32 46 32 46 27 38 27"></polygon>
+            <polygon id="Fill-18" points="25 45 39 45 39 40 25 40"></polygon>
+            <polygon id="Fill-19" points="28 50 36 50 36 45 28 45"></polygon>
+            <polygon id="Fill-20" points="18 32 26 32 26 27 18 27"></polygon>
+            <polygon id="Fill-21" points="138 64 144 64 144 6 138 6"></polygon>
+            <polygon id="Fill-22" points="80 64 86 64 86 6 80 6"></polygon>
+            <polygon id="Fill-23" points="86 64 138 64 138 58 86 58"></polygon>
+            <polygon id="Fill-24" points="86 34 138 34 138 28 86 28"></polygon>
+            <polygon id="Fill-25" points="86 6 138 6 138 0 86 0"></polygon>
+            <polygon id="Fill-26" points="90 41 98 41 98 37 90 37"></polygon>
+            <polygon id="Fill-27" points="90 48 98 48 98 44 90 44"></polygon>
+            <polygon id="Fill-28" points="90 55 98 55 98 51 90 51"></polygon>
+            <polygon id="Fill-29" points="114 41 122 41 122 37 114 37"></polygon>
+            <polygon id="Fill-30" points="114 48 122 48 122 44 114 44"></polygon>
+            <polygon id="Fill-31" points="114 55 122 55 122 51 114 51"></polygon>
+            <polygon id="Fill-32" points="102 41 110 41 110 37 102 37"></polygon>
+            <polygon id="Fill-33" points="102 48 110 48 110 44 102 44"></polygon>
+            <polygon id="Fill-34" points="102 55 110 55 110 51 102 51"></polygon>
+            <polygon id="Fill-35" points="126 41 134 41 134 37 126 37"></polygon>
+            <polygon id="Fill-36" points="126 48 134 48 134 44 126 44"></polygon>
+            <polygon id="Fill-37" points="126 55 134 55 134 51 126 51"></polygon>
+        </g>
+    </g>
+</svg>

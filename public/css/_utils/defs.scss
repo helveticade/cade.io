@@ -1,0 +1,18 @@
+// Type
+@font-face {
+  font-family: 'Apercu Mono';
+  src: url("/type/apercu-mono-webfont.eot");
+  src: url("/type/apercu-mono-webfont.eot#iefix") format('embedded-opentype'),
+     url("/type/apercu-mono-webfont.woff") format('woff'),
+     url("/type/apercu-mono-webfont.ttf") format('truetype'),
+     url("/type/apercu-mono-webfont.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$Apercu: "Apercu Mono", Monaco, monospace;
+
+$blue: #2301DD;
+$magenta: #FF5CD1;
+$white: #efefef;
+$black: #222222;

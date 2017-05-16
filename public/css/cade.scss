@@ -1,6 +1,5 @@
 @import '_utils/reset';
-@import '_utils/mixins';
-@import '_type/defs';
+@import '_utils/defs';
 
 @import 'base';
 
@@ -11,3 +10,4 @@
 @media screen and (min-width: 768px) {
   @import 'large';
 }
+
