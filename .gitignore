@@ -6,12 +6,6 @@ node_modules
 *.otf
 *.ttf
 *.woff
-public/assets/type/
-public/assets/img/test
-store
-public/assets/styles/_type
-CNAME
+public/type/
 .letsencrypt
 *.pem
-*/.well-known
-.DS_Store
