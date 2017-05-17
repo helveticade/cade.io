@@ -3,5 +3,6 @@ html(lang="en")
   head
     include _partials/meta
   body(class="loc-#{ current.path[0] }" id="#{ current.path.join('-') }")
-    include _partials/header
-    != yield
+    .frame
+      include _partials/header
+      != yield
