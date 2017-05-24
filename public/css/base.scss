@@ -1,6 +1,6 @@
 ::selection {
-  background-color: $magenta;
-  color: $white;
+  background-color: $yellow;
+  color: $black;
 }
 
 body {
@@ -14,10 +14,25 @@ body {
 }
 
 .frame {
+  width: 100%;
   max-width: 64rem;
 }
+
 header {
   padding: 0 2rem;
+  margin-bottom: 3.5rem;
+
+  a {
+    border-bottom: 1px solid $blue;
+    color: $blue;
+    transition: color 50ms ease-out, background-color 100ms ease-out;
+    &:hover {
+      background-color: $magenta;
+      color: $white;
+      border-bottom: 1px solid $magenta;
+    }
+    text-decoration: none;
+  }
 
   img {
     display: block;
@@ -32,11 +47,15 @@ header {
   }
 
   h1 {
-    border-bottom: 2px solid $blue;
+
     color: $blue;
     display: inline-block;
     font-size: 17px;
     margin-bottom: 0.75rem;
+    a {
+      text-decoration: none;
+      border-bottom: 2px solid $blue;
+    }
   }
 
   p {
@@ -49,7 +68,6 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 3.5rem;
 
   a {
     border-bottom: 1px solid $blue;
@@ -60,7 +78,6 @@ header {
       color: $white;
       border-bottom: 1px solid $magenta;
     }
-
     text-decoration: none;
   }
 
@@ -92,6 +109,49 @@ header {
           text-transform: uppercase;
         }
       }
+    }
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+
+  h2 {
+    color: $blue;
+    font-size: 13px;
+    margin-bottom: 0.75rem;
+  }
+  header {
+    padding: 0 0 0 2rem;
+  }
+  .deets {
+    width: 240px;
+    date {
+      color: #888;
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 11px;
+      margin-bottom: 0.25rem;
+      a {
+        border-bottom: 1px solid $black;
+        color: $black;
+        &:hover {
+          background-color: $blue;
+          color: $white;
+          border-bottom: 1px solid $blue;
+        }
+        text-decoration: none;
+      }
+    }
+  }
+  article {
+    padding: 0 2rem 0 0;
+    p {
+      font-size: 13px;
+      margin-bottom: 1rem;
     }
   }
 }
