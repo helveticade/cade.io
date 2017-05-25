@@ -4,6 +4,7 @@
   "description": "A small website.",
   "main": "index.js",
   "scripts": {
+    "deploy": "npm install; npm rebuild node-sass; echo Compiling harp; harp compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
