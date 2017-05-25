@@ -25,17 +25,16 @@ $black: #222222;
 
 body {
   -webkit-font-smoothing: antialiased;
-  align-items: center;
   background-color: #efefef;
-  display: flex;
-  flex-direction: column;
   font-family: $Apercu;
   line-height: 1.45;
 }
 
 .frame {
   width: 100%;
+  min-width: 48rem;
   max-width: 64rem;
+  margin: 0 auto;
 }
 
 header {
